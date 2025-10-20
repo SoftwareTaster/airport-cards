@@ -141,12 +141,28 @@
 <script>
   // Tab logic
   const tabs=document.querySelectorAll('.tab');
+  const sections = {
+    'jfk': document.getElementById('jfk'),
+    'hnd': document.getElementById('hnd'),
+    'inflight': document.getElementById('inflight')
+  };
+  
   tabs.forEach(t=>t.addEventListener('click',()=>{
+    const target = t.dataset.target;
+    
+    // 移除所有 active 状态
     tabs.forEach(x=>x.classList.remove('active'));
     t.classList.add('active');
-    document.getElementById('jfk').style.display = t.dataset.target==='jfk' ? '' : 'none';
-    document.getElementById('hnd').style.display = t.dataset.target==='hnd' ? '' : 'none';
-    document.getElementById('inflight').style.display = t.dataset.target==='inflight' ? '' : 'none';
+    
+    // 隐藏所有 section
+    Object.values(sections).forEach(section => {
+      if(section) section.style.display = 'none';
+    });
+    
+    // 显示目标 section
+    if(sections[target]) {
+      sections[target].style.display = 'block';
+    }
   }));
 
   // Modal & TTS
