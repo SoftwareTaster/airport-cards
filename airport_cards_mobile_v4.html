@@ -56,31 +56,64 @@ h1{margin:0 0 10px;font-size:20px;font-weight:800;}
   <div class="section-title">🚨 非自愿无法登机（最重要）</div>
   <div class="grid">
 
+    <!-- 核心 1 -->
     <div class="card pinned"
-      data-primary="Please mark me as involuntary unable to board in the system."
-      data-secondary="请在系统备注：我是非自愿无法登机。"
+      data-primary="Please record in the system that I am involuntarily unable to board. Do not mark as no-show."
+      data-secondary="请在系统备注：我是非自愿无法登机，请不要标记为 no-show。"
       data-lang="en-US">
       <div class="badge">Emergency</div>
-      <div class="lang-primary">Please mark me as involuntary unable to board in the system.</div>
-      <div class="lang-secondary">请在系统备注：我是非自愿无法登机。</div>
+      <div class="lang-primary">Please record in the system that I am involuntarily unable to board. Do not mark as no-show.</div>
+      <div class="lang-secondary">请在系统备注：我是非自愿无法登机，请不要标记为 no-show。</div>
     </div>
 
+    <!-- 核心 2 -->
     <div class="card pinned"
-      data-primary="This is not my own decision."
-      data-secondary="这不是我自己的决定。"
+      data-primary="Please add a system note that I was involuntarily unable to board due to authorities, not by my own decision."
+      data-secondary="请帮我在系统里备注：我是被有关部门拦下，属于非自愿未登机，不是我自己不想上。"
       data-lang="en-US">
       <div class="badge">Emergency</div>
-      <div class="lang-primary">This is not my own decision.</div>
-      <div class="lang-secondary">这不是我自己的决定。</div>
+      <div class="lang-primary">Please add a system note that I was involuntarily unable to board due to authorities, not by my own decision.</div>
+      <div class="lang-secondary">请帮我在系统里备注：我是被有关部门拦下，属于非自愿未登机，不是我自己不想上。</div>
     </div>
 
+    <!-- 核心 3（降对抗） -->
     <div class="card pinned"
-      data-primary="Please do not mark me as no-show."
-      data-secondary="请不要把我标记为 no-show。"
+      data-primary="I am not asking for compensation now, just to have the correct record."
+      data-secondary="我不是现在要求赔偿，只希望系统记录正确。"
       data-lang="en-US">
-      <div class="badge">Emergency</div>
-      <div class="lang-primary">Please do not mark me as no-show.</div>
-      <div class="lang-secondary">请不要把我标记为 no-show。</div>
+      <div class="badge">Tip</div>
+      <div class="lang-primary">I am not asking for compensation now, just to have the correct record.</div>
+      <div class="lang-secondary">我不是现在要求赔偿，只希望系统记录正确。</div>
+    </div>
+
+    <!-- 起飞前 · 柜台 -->
+    <div class="card"
+      data-primary="I cannot board this flight. Please cancel my check-in or record that I am unable to board."
+      data-secondary="我现在不能登机，请帮我取消值机或记录我无法登机。"
+      data-lang="en-US">
+      <div class="badge">Before Departure</div>
+      <div class="lang-primary">I cannot board this flight. Please cancel my check-in or record that I am unable to board.</div>
+      <div class="lang-secondary">我现在不能登机，请帮我取消值机或记录我无法登机。</div>
+    </div>
+
+    <!-- 起飞前 · 被拦 -->
+    <div class="card"
+      data-primary="I am at the airport now. I was stopped by authorities and cannot board. Please make a note in my booking that this was involuntary and not my fault."
+      data-secondary="我现在在机场，被安检或警察拦下，不能登机。请在系统备注：这是非自愿的，不是乘客责任。"
+      data-lang="en-US">
+      <div class="badge">Before Departure</div>
+      <div class="lang-primary">I am at the airport now. I was stopped by authorities and cannot board. Please make a note in my booking that this was involuntary and not my fault.</div>
+      <div class="lang-secondary">我现在在机场，被安检或警察拦下，不能登机。请在系统备注：这是非自愿的，不是乘客责任。</div>
+    </div>
+
+    <!-- 起飞后 · 退票 / 申诉 -->
+    <div class="card"
+      data-primary="I reported before departure that I could not board. Please check the system note and process the refund as involuntary unable to board."
+      data-secondary="我在起飞前已报告无法登机，请查系统备注，并按非自愿未登机处理退票。"
+      data-lang="en-US">
+      <div class="badge">After Departure</div>
+      <div class="lang-primary">I reported before departure that I could not board. Please check the system note and process the refund as involuntary unable to board.</div>
+      <div class="lang-secondary">我在起飞前已报告无法登机，请查系统备注，并按非自愿未登机处理退票。</div>
     </div>
 
   </div>
@@ -134,6 +167,51 @@ h1{margin:0 0 10px;font-size:20px;font-weight:800;}
       <div class="badge">CBP</div>
       <div class="lang-primary">Right now I’m transitioning, but the U.S. is my permanent residence.</div>
       <div class="lang-secondary">我目前在过渡安排中，但美国是我的永久居住地。</div>
+    </div>
+
+    <div class="card pinned"
+      data-primary="I’m returning to the U.S. to take care of some personal matters and paperwork."
+      data-secondary="我回美国是为了处理一些个人事务和文件。"
+      data-lang="en-US">
+      <div class="badge">CBP</div>
+      <div class="lang-primary">I’m returning to the U.S. to take care of some personal matters and paperwork.</div>
+      <div class="lang-secondary">我回美国是为了处理一些个人事务和文件。</div>
+    </div>
+
+    <div class="card"
+      data-primary="No, I did not work."
+      data-secondary="没有，我在国外没有工作。"
+      data-lang="en-US">
+      <div class="badge">CBP</div>
+      <div class="lang-primary">No, I did not work.</div>
+      <div class="lang-secondary">没有，我在国外没有工作。</div>
+    </div>
+
+    <div class="card"
+      data-primary="I live in New York City, New York."
+      data-secondary="我住在纽约市，纽约州。"
+      data-lang="en-US">
+      <div class="badge">CBP</div>
+      <div class="lang-primary">I live in New York City, New York.</div>
+      <div class="lang-secondary">我住在纽约市，纽约州。</div>
+    </div>
+
+    <div class="card"
+      data-primary="I’ll stay in the U.S. for a short period to finish my paperwork, and I plan to continue living in the U.S."
+      data-secondary="我会在美国短期停留，处理完文件后继续生活在美国。"
+      data-lang="en-US">
+      <div class="badge">CBP</div>
+      <div class="lang-primary">I’ll stay in the U.S. for a short period to finish my paperwork, and I plan to continue living in the U.S.</div>
+      <div class="lang-secondary">我会在美国短期停留，处理完文件后继续生活在美国。</div>
+    </div>
+
+    <div class="card"
+      data-primary="I had some matters to attend to back in China, but I’ll continue traveling back and forth for now."
+      data-secondary="我在中国有一些事情要处理，之后会继续往返两边。"
+      data-lang="en-US">
+      <div class="badge">CBP · If Asked</div>
+      <div class="lang-primary">I had some matters to attend to back in China, but I’ll continue traveling back and forth for now.</div>
+      <div class="lang-secondary">我在中国有一些事情要处理，之后会继续往返两边。</div>
     </div>
 
   </div>
